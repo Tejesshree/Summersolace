@@ -1,0 +1,252 @@
+body{
+    font-family: cursive;
+    margin-left:35px;
+    margin-right: 35px;
+}
+h3{
+    text-decoration: underline;
+    color:darkcyan;
+}
+.txt
+{
+    font-size: 20px;
+    color: rgb(3, 109, 109);
+    text-align: center;
+}
+h1{
+    background-color: rgb(181, 237, 231);
+}
+
+*
+{
+    box-sizing: border-box;
+}
+.i{
+  z-index: -1;
+}
+section::after{
+    padding: 0;
+    content:"";
+    display:table;
+    clear: both;
+  
+    
+}
+.q
+{
+  background-color: rgb(233, 221, 195) ;
+  border-radius: 10px;
+  padding:30px;
+ font-size:medium;
+ font-style:italic;
+ width:72%;
+ margin-left:16%;
+ margin-right: 24%;
+ margin-top: 25px;
+ margin-bottom:15px;
+ padding-top: 2px;
+ padding-bottom: 2px;
+ text-align:center;
+}
+article
+{
+float:left;
+padding:20px;
+width:60%;
+height:300px;
+}
+aside
+  {
+    background-image: linear-gradient(rgba(34, 33, 33, 0.5), rgba(40, 39, 39, 0.5)), url("https://media.istockphoto.com/id/1264573507/photo/tenn-girl-reading-a-book-lying-on-the-grass.jpg?s=170667a&w=0&k=20&c=iyC57tFbBT-FjdBSTG32ExticX-tlM6Of-YU4-wfHwI=");
+    background-size:cover;
+    background-position:center;
+    width: 40%;
+    height:259px;
+    position:relative;
+    float:right;
+    border-radius:8px;
+    margin-top:2%;
+    z-index:-1;
+    
+  }
+  @media (max-width:800px){
+
+    article{
+     width:100%;
+     height:auto;
+    }
+    aside{
+     width:100%;
+    }
+   }
+
+.column
+{
+  float:left;
+  padding:15px;
+  width:50%;
+  
+}
+.skills-content::after{
+  content:"";
+  display:table;
+  clear:both;
+}
+@media screen and (max-width:300px){
+  .column{
+    width:100%;
+  }
+  .skills-content
+  {
+    width: 100%;
+  }
+}
+.eend
+{
+  font-style:italic;
+  text-align:center;
+}
+.img34
+{
+    background-image: url("https://cache.careers360.mobi/media/article_images/2022/4/18/top-6-summer-activities-to-be-done-by-students.jpg");
+    background-size:cover;
+    background-position:center;
+    width: 60%;
+    height:318px;
+    position:relative;
+    border-radius:8px;
+    margin-left:23%;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color:rgb(171, 220, 222);
+}
+li {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  
+  position:relative;
+  justify-content: space-between;
+  padding: 18px;
+  background-color: teal;
+  color: #fff;
+}
+
+.nav-links a {
+  color: #fff;
+}
+
+
+.logo {
+  font-size: 32px;
+}
+
+
+.menu {
+  display: flex;
+  gap: 0.8em;
+  font-size: 18px;
+}
+
+.menu li:hover {
+  background-color: #4c9e9e;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+i{
+  color: whitesmoke;
+  font-size: 15px;
+}
+
+
+.services {
+  position: relative; 
+}
+
+.dropdown {
+  background-color: rgb(1, 139, 139);
+  padding: 0.8em 0;
+  position: absolute; 
+  display: none;
+  border-radius: 5px;
+  top: 30px;
+}
+
+.dropdown li + li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+    text-align:center;
+}
+
+.dropdown li:hover {
+  background-color: #4c9e9e;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+input[type=checkbox] {
+  display: none;
+} 
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+
+@media (max-width: 768px) {
+ .menu {
+    display:none;
+    position: absolute;
+    background-color:teal;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color:#4c9e9e;
+    transition: 0.3s ease;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+
+  .dropdown li:hover {
+    background-color: #4c9e9e;
+  }
+}
+
+
